@@ -1,0 +1,22 @@
+language: node_js
+node_js:
+- '0.10'
+env:
+  global:
+  - CHANNEL=stable
+  - KARMA_BROWSERS=DartiumWithWebPlatform
+  - E2E_BROWSERS=Dartium
+  - LOGS_DIR=/tmp/angular-build/logs
+  - ARCH=linux-x64
+before_install:
+- set -vxe
+- echo before_install
+before_script:
+- set -vxe
+- echo before_script
+script:
+- set -vxe
+- echo script
+after_script:
+- set -vxe
+- echo after_script
